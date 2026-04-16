@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Unicat</string>
+    <string name="criar_conta">Criar conta</string>
+    <string name="nome_completo">Nome completo</string>
+    <string name="seu_nome">Seu nome</string>
+    <string name="email">Email</string>
+    <string name="seu_email">seu@email.com</string>
+    <string name="senha">Senha</string>
+    <string name="senha_hint">Mínimo 8 caracteres</string>
+    <string name="confirmar_senha">Confirmar senha</string>
+    <string name="repita_senha">Repita a senha</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="ja_tem_conta">Já tem uma conta? </string>
+    <string name="login">Login</string>
+    <string name="erro_campos_vazios">Por favor, preencha todos os campos</string>
+    <string name="erro_senhas_diferentes">As senhas não coincidem</string>
+    <string name="erro_senha_curta">A senha deve ter pelo menos 8 caracteres</string>
+    <string name="erro_email_invalido">Por favor, insira um e-mail válido</string>
+    <string name="sucesso_cadastro">Cadastro realizado com sucesso para: %1$s</string>
+    <string name="ir_para_login">Ir para tela de Login</string>
+    <string name="logo_desc">Logo do Aplicativo</string>
+</resources>
