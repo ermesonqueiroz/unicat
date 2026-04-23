@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F2F5">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#2D5DA1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/btnVoltar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:tint="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Novo Post"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Área de foto com borda tracejada -->
+            <LinearLayout
+                android:id="@+id/layoutFoto"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/borda_tracejada"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📷"
+                    android:textSize="40sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toque para adicionar foto"
+                    android:textColor="#2D5DA1"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Label Marcar Gato -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MARCAR GATO"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="#1A1A1A"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Chips dos gatos (rolagem horizontal) -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutGatos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+            </HorizontalScrollView>
+
+            <!-- Label Legenda -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Legenda"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="6dp"/>
+
+            <!-- Campo de texto -->
+            <EditText
+                android:id="@+id/editLegenda"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Escreva algo sobre o gato..."
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:textSize="14sp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Botão Publicar -->
+            <Button
+                android:id="@+id/btnPublicar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Publicar"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2D5DA1"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

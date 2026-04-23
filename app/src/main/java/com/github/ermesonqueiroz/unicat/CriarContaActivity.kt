@@ -34,7 +34,7 @@ class CriarContaActivity : AppCompatActivity() {
         btnCadastrar.setOnClickListener { validarECadastrar() }
 
         tvLogin.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java));
+            finish()
         }
     }
 

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E5E5E5">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2F5FA7"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/btnNotificacoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="#33FFFFFF"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:text="🔔"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/btnEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="#33FFFFFF"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:text="Editar"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="#EEEEEE"
+                android:gravity="center"
+                android:text="👩"
+                android:textSize="40sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Ana Souza"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ana.souza@email.com"
+                android:textColor="#CCFFFFFF"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Conteúdo -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Seção Afiliados -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="🐾 Meus Afiliados"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:background="#FFFFFF"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:padding="10dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🐱\nMingau" android:gravity="center" android:textSize="13sp"/></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:background="#FFFFFF"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:padding="10dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🐈\nPretinha" android:gravity="center" android:textSize="13sp"/></LinearLayout>
+            </LinearLayout>
+
+            <!-- Seção Posts -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="📸 Meus Posts"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2">
+                <TextView android:layout_width="0dp" android:layout_height="90dp" android:layout_columnWeight="1" android:layout_margin="5dp" android:background="#CFD9E6" android:gravity="center" android:text="🐱" android:textSize="30sp"/>
+                <TextView android:layout_width="0dp" android:layout_height="90dp" android:layout_columnWeight="1" android:layout_margin="5dp" android:background="#E6D9A6" android:gravity="center" android:text="🦁" android:textSize="30sp"/>
+                <TextView android:layout_width="0dp" android:layout_height="90dp" android:layout_columnWeight="1" android:layout_margin="5dp" android:background="#E6CFD6" android:gravity="center" android:text="🐾" android:textSize="30sp"/>
+                <TextView android:layout_width="0dp" android:layout_height="90dp" android:layout_columnWeight="1" android:layout_margin="5dp" android:background="#CFE6DC" android:gravity="center" android:text="🐱" android:textSize="30sp"/>
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="#EEEEEE"
+        android:orientation="horizontal">
+        <LinearLayout android:id="@+id/navMapa" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🗺️" android:textSize="22sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mapa" android:textSize="10sp" android:textColor="#555555"/></LinearLayout>
+        <LinearLayout android:id="@+id/navGatos" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🐱" android:textSize="22sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gatos" android:textSize="10sp" android:textColor="#555555"/></LinearLayout>
+        <LinearLayout android:id="@+id/navFeed" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📰" android:textSize="22sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Feed" android:textSize="10sp" android:textColor="#555555"/></LinearLayout>
+        <LinearLayout android:id="@+id/navPerfil" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="👤" android:textSize="22sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Perfil" android:textSize="10sp" android:textColor="#2F5FA7" android:textStyle="bold"/></LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

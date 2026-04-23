@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             if (email == "gatos@unifor.br" && senha == "123456") {
-                startActivity(Intent(this, PerfilGatoActivity::class.java))
+                startActivity(Intent(this, MapaActivity::class.java))
             } else {
                 Toast.makeText(this, "Email ou senha incorretos", Toast.LENGTH_SHORT).show()
             }

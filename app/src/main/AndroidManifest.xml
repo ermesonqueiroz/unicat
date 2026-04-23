@@ -24,6 +24,35 @@
         <activity
             android:name=".PerfilGatoActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".CriarContaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".FeedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NovoPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListaGatosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificacoesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilPessoaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuscaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecuperacaoSenhaActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

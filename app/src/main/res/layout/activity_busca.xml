@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#1A56A0"
+        android:padding="14dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Search Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="horizontal"
+            android:padding="9dp"
+            android:gravity="center_vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔍" android:textSize="18sp" android:layout_marginEnd="8dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Buscar gatos ou usuários..."
+                android:textSize="15sp"
+                android:text="Ming"/>
+        </LinearLayout>
+
+        <!-- Filter Tabs -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#1A56A0" android:textColor="#FFFFFF" android:paddingHorizontal="15dp" android:paddingVertical="6dp" android:text="Todos" android:textSize="13sp" android:layout_marginEnd="8dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#FFFFFF" android:textColor="#6B7280" android:paddingHorizontal="15dp" android:paddingVertical="6dp" android:text="Gatos" android:textSize="13sp" android:layout_marginEnd="8dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#FFFFFF" android:textColor="#6B7280" android:paddingHorizontal="15dp" android:paddingVertical="6dp" android:text="Usuários" android:textSize="13sp"/>
+        </LinearLayout>
+
+        <!-- Results -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GATOS" android:textSize="11sp" android:textStyle="bold" android:textColor="#6B7280" android:layout_marginBottom="8dp"/>
+                
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#FFFFFF" android:padding="11dp" android:gravity="center_vertical" android:layout_marginBottom="9dp">
+                    <TextView android:layout_width="46dp" android:layout_height="46dp" android:background="#E8F0FB" android:gravity="center" android:text="🐱" android:textSize="24sp"/>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mingau" android:textStyle="bold" android:textColor="#1A1A2E" android:textSize="15sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📍 Bloco C · 7 padrinhos" android:textColor="#6B7280" android:textSize="12sp"/>
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textSize="20sp" android:textColor="#6B7280"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="USUÁRIOS" android:textSize="11sp" android:textStyle="bold" android:textColor="#6B7280" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#FFFFFF" android:padding="11dp" android:gravity="center_vertical" android:layout_marginBottom="9dp">
+                    <TextView android:layout_width="46dp" android:layout_height="46dp" android:background="#FCE7F3" android:gravity="center" android:text="👩" android:textSize="24sp"/>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ana Ferreira" android:textStyle="bold" android:textColor="#1A1A2E" android:textSize="15sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 afilhados" android:textColor="#6B7280" android:textSize="12sp"/>
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textSize="20sp" android:textColor="#6B7280"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#FFFFFF" android:padding="11dp" android:gravity="center_vertical" android:layout_marginBottom="9dp">
+                    <TextView android:layout_width="46dp" android:layout_height="46dp" android:background="#ECFDF5" android:gravity="center" android:text="👨" android:textSize="24sp"/>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Miguel Ferreira" android:textStyle="bold" android:textColor="#1A1A2E" android:textSize="15sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1 afilhado" android:textColor="#6B7280" android:textSize="12sp"/>
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textSize="20sp" android:textColor="#6B7280"/>
+                </LinearLayout>
+                
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🗺️" android:textSize="22sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mapa" android:textSize="10sp" android:textColor="#6B7280"/></LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🐱" android:textSize="22sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gatos" android:textSize="10sp" android:textColor="#6B7280"/></LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📰" android:textSize="22sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Feed" android:textSize="10sp" android:textColor="#1A56A0" android:textStyle="bold"/></LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="👤" android:textSize="22sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Perfil" android:textSize="10sp" android:textColor="#6B7280"/></LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

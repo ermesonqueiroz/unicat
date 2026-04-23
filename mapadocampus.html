@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gatos da UNIFOR</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+}
+
+.app {
+    width: 360px;
+    height: 720px;
+    background: #cfe3c8;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.header {
+    background: #2f5fa7;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* MAPA */
+.map {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.quadrante {
+    background: rgba(255,255,255,0.2);
+    position: relative;
+    border-radius: 10px;
+}
+
+/* BLOCO BEGE */
+.box {
+    width: 60%;
+    height: 60%;
+    background: #c9bba9;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border-radius: 8px;
+}
+
+/* MARCADORES */
+.marker {
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: white;
+}
+
+.blue {
+    background: #1e4d8f;
+}
+
+.orange {
+    background: #ff6a00;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 3px;
+    background: currentColor;
+}
+
+/* BOTÃO */
+.btn {
+    background: #2f5fa7;
+    color: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background: #eee;
+    font-size: 12px;
+}
+
+.footer div {
+    text-align: center;
+    color: #555;
+}
+</style>
+
+</head>
+<body>
+
+<div class="app">
+
+    <div class="header">🐱 Gatos da UNIFOR</div>
+
+    <div class="map">
+
+        <div class="quadrante">
+            <div class="box"></div>
+            <div class="marker blue" style="bottom: 20px; left: 20px;">
+                Mingau
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <div class="quadrante">
+            <div class="box"></div>
+            <div class="marker blue" style="top: 30px; left: 50px;">
+                Pretinha
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <div class="quadrante">
+            <div class="box"></div>
+        </div>
+
+        <div class="quadrante">
+            <div class="box"></div>
+            <div class="marker orange" style="top: 60px; left: 40px;">
+                Luna
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <div class="quadrante">
+            <div class="box"></div>
+            <div class="marker blue" style="top: 80px; left: 50px;">
+                Tigrão
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <div class="quadrante">
+            <div class="box"></div>
+        </div>
+
+        <div class="quadrante">
+            <div class="box"></div>
+        </div>
+
+        <div class="quadrante">
+            <div class="box"></div>
+        </div>
+
+        <div class="quadrante">
+            <div class="box"></div>
+        </div>
+
+    </div>
+
+    <div class="btn">Ver Gatos</div>
+
+    <div class="footer">
+        <div>🗺️<br>Mapa</div>
+        <div>🐱<br>Gatos</div>
+        <div>📰<br>Feed</div>
+        <div>👤<br>Perfil</div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CFE3C8">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#2F5FA7"
+        android:padding="15dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐱 Gatos da UNIFOR"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Mapa (Simulado com Grid) -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:padding="10dp">
+
+        <!-- Quadrante 1 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="#33FFFFFF">
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="#C9BBA9"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="5dp"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:background="#1E4D8F"
+                android:text="Mingau"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"/>
+        </FrameLayout>
+
+        <!-- Quadrante 2 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="#33FFFFFF">
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="#C9BBA9"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:background="#1E4D8F"
+                android:text="Pretinha"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"/>
+        </FrameLayout>
+
+        <!-- Quadrante 3 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="#33FFFFFF">
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="#C9BBA9"/>
+        </FrameLayout>
+
+        <!-- Quadrante 4 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="#33FFFFFF">
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="#C9BBA9"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:background="#FF6A00"
+                android:text="Luna"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"/>
+        </FrameLayout>
+
+        <!-- Quadrante 5 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:background="#33FFFFFF">
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="#C9BBA9"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="5dp"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:background="#1E4D8F"
+                android:text="Tigrão"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"/>
+        </FrameLayout>
+
+        <!-- Outros quadrantes vazios -->
+        <FrameLayout android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_margin="5dp" android:background="#33FFFFFF"><View android:layout_width="60dp" android:layout_height="60dp" android:layout_gravity="center" android:background="#C9BBA9"/></FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_margin="5dp" android:background="#33FFFFFF"><View android:layout_width="60dp" android:layout_height="60dp" android:layout_gravity="center" android:background="#C9BBA9"/></FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_margin="5dp" android:background="#33FFFFFF"><View android:layout_width="60dp" android:layout_height="60dp" android:layout_gravity="center" android:background="#C9BBA9"/></FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="0dp" android:layout_columnWeight="1" android:layout_rowWeight="1" android:layout_margin="5dp" android:background="#33FFFFFF"><View android:layout_width="60dp" android:layout_height="60dp" android:layout_gravity="center" android:background="#C9BBA9"/></FrameLayout>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnVerGatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#2F5FA7"
+        android:padding="15dp"
+        android:text="Ver Gatos"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="#EEEEEE"
+        android:orientation="horizontal">
+        <LinearLayout android:id="@+id/navMapa" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🗺️" android:textSize="22sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mapa" android:textSize="10sp" android:textColor="#2F5FA7"/></LinearLayout>
+        <LinearLayout android:id="@+id/navGatos" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🐱" android:textSize="22sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gatos" android:textSize="10sp" android:textColor="#555555"/></LinearLayout>
+        <LinearLayout android:id="@+id/navFeed" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📰" android:textSize="22sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Feed" android:textSize="10sp" android:textColor="#555555"/></LinearLayout>
+        <LinearLayout android:id="@+id/navPerfil" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="👤" android:textSize="22sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Perfil" android:textSize="10sp" android:textColor="#555555"/></LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
