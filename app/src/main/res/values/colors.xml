@@ -12,4 +12,10 @@
     <color name="alert_text">#92400E</color>
     <color name="delta_positive">#16A34A</color>
     <color name="btn_action_bg">#E8F0FB</color>
+
+    <!-- Moderation Colors -->
+    <color name="mod_success_bg">#DCFCE7</color>
+    <color name="mod_success_text">#15803D</color>
+    <color name="mod_error_bg">#FEE2E2</color>
+    <color name="mod_error_text">#DC2626</color>
 </resources>

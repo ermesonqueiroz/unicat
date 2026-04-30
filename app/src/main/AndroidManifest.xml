@@ -56,6 +56,9 @@
         <activity
             android:name=".AdminHomeActivity"
             android:exported="false" />
+        <activity
+            android:name=".AdminFeedActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

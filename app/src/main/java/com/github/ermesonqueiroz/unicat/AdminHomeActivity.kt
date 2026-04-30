@@ -26,7 +26,7 @@ class AdminHomeActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.btnModerarFeed).setOnClickListener {
-            startActivity(Intent(this, FeedActivity::class.java))
+            startActivity(Intent(this, AdminFeedActivity::class.java))
         }
 
         findViewById<Button>(R.id.btnAtualizarMapa).setOnClickListener {
@@ -44,7 +44,7 @@ class AdminHomeActivity : AppCompatActivity() {
         }
 
         findViewById<View>(R.id.navAdminFeed).setOnClickListener {
-            startActivity(Intent(this, FeedActivity::class.java))
+            startActivity(Intent(this, AdminFeedActivity::class.java))
         }
 
         findViewById<View>(R.id.navAdminMapa).setOnClickListener {
