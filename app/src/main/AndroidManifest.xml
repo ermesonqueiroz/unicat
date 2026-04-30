@@ -53,6 +53,9 @@
         <activity
             android:name=".RecuperacaoSenhaActivity"
             android:exported="false" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

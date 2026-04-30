@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primary">#1A56A0</color>
+    <color name="primary_dark">#0D3D7A</color>
+    <color name="background">#F5F7FA</color>
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="alert_bg">#FEF3C7</color>
+    <color name="alert_border">#FCD34D</color>
+    <color name="alert_text">#92400E</color>
+    <color name="delta_positive">#16A34A</color>
+    <color name="btn_action_bg">#E8F0FB</color>
 </resources>

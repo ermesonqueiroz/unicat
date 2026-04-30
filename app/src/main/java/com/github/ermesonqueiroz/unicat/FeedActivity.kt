@@ -1,5 +1,6 @@
 package com.github.ermesonqueiroz.unicat
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
