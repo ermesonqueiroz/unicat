@@ -5,6 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.recyclerview.widget.RecyclerView
+import com.github.ermesonqueiroz.unicat.adapters.CatAdapter
+import com.github.ermesonqueiroz.unicat.domain.Cat
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,6 +39,24 @@ class UserCatListFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_user_cat_list, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val rvCats = view.findViewById<RecyclerView>(R.id.rvCats)
+
+        val catList = listOf<Cat>(
+            Cat("Mingau", "📍 Bloco C", "🐱", "#E8F0FB"),
+            Cat("Pretinha", "📍 Biblioteca", "🐈", "#1A1A2E"),
+            Cat("Tigrão", "📍 Lagoa", "🦁", "#FEF3C7")
+        )
+
+        val catAdapter = CatAdapter(catList) { cat ->
+            Toast.makeText(requireContext(), "Clicou em: ${cat.name}", Toast.LENGTH_SHORT).show()
+        }
+
+        rvCats.adapter = catAdapter
     }
 
     companion object {

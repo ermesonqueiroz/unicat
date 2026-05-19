@@ -7,6 +7,7 @@ import android.text.TextWatcher
 import android.widget.EditText
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
+import com.github.ermesonqueiroz.unicat.adapters.UserAdapter
 
 /**
  * Tela de Gestão de Usuários (admin).

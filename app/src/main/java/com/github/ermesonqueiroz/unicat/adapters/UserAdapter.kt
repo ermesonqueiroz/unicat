@@ -1,4 +1,4 @@
-package com.github.ermesonqueiroz.unicat
+package com.github.ermesonqueiroz.unicat.adapters
 
 import android.app.AlertDialog
 import android.content.Context
@@ -9,6 +9,8 @@ import android.widget.BaseAdapter
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import com.github.ermesonqueiroz.unicat.R
+import com.github.ermesonqueiroz.unicat.User
 
 class UserAdapter(
     private val context: Context,
