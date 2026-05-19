@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.github.ermesonqueiroz.unicat.domain.Post
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,6 +37,21 @@ class UserFeedFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_user_feed, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val rvFeed = view.findViewById<RecyclerView>(R.id.rvFeed)
+
+        val listaDePosts = listOf<Post>(
+            Post("Ana Souza", "Mingau tá todo fofo hoje!", 12, "#E8F0FB", "#E8F0FB"),
+            Post("Lucas Alves", "Tigrão relaxando no sol", 8, "#FEF3C7", "#FEF3C7"),
+            Post("Marina Costa", "Pretinha esperando a aula acabar 😂", 5, "#ECFDF5", "#1A1A2E")
+        )
+
+        val feedAdapter = FeedAdapter(listaDePosts)
+        rvFeed.adapter = feedAdapter
     }
 
     companion object {
