@@ -1,5 +1,6 @@
 package com.github.ermesonqueiroz.unicat
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.github.ermesonqueiroz.unicat.domain.Post
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -42,7 +44,12 @@ class UserFeedFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val fabCreatePost = view.findViewById<FloatingActionButton>(R.id.fabCreatePost)
         val rvFeed = view.findViewById<RecyclerView>(R.id.rvFeed)
+
+        fabCreatePost.setOnClickListener {
+            startActivity(Intent(requireActivity(), UserCreatePost::class.java))
+        }
 
         val listaDePosts = listOf<Post>(
             Post("Ana Souza", "Mingau tá todo fofo hoje!", 12, "#E8F0FB", "#E8F0FB"),
