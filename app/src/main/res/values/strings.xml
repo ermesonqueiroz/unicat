@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">UniCat</string>
+
+    <!-- CriarContaActivity -->
+    <string name="criar_conta">Criar conta</string>
+    <string name="nome_completo">Nome completo</string>
+    <string name="seu_nome">Seu nome</string>
+    <string name="email">Email</string>
+    <string name="seu_email">seu@email.com</string>
+    <string name="senha">Senha</string>
+    <string name="senha_hint">8+ chars, A-Z, 0-9</string>
+    <string name="confirmar_senha">Confirmar senha</string>
+    <string name="repita_senha">Repita a senha</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="ja_tem_conta">Já tem uma conta? </string>
+    <string name="login">Login</string>
+    <string name="erro_campos_vazios">Por favor, preencha todos os campos</string>
+    <string name="erro_senhas_diferentes">As senhas não coincidem</string>
+    <string name="erro_senha_curta">A senha deve ter pelo menos 8 caracteres</string>
+    <string name="erro_senha_fraca">A senha deve ter 8+ caracteres, incluir uma letra maiúscula e um número</string>
+    <string name="erro_email_invalido">Por favor, insira um e-mail válido</string>
+    <string name="sucesso_cadastro">Cadastro realizado com sucesso para: %1$s</string>
+    <string name="ir_para_login">Ir para tela de Login</string>
+    <string name="logo_desc">Logo do Aplicativo</string>
+
+    <!-- GestaoUsuariosActivity / UserAdapter -->
+    <string name="search_hint">Buscar usuário...</string>
+    <string name="btn_deactivate">Desativar</string>
+    <string name="btn_activate">Ativar</string>
+    <string name="btn_delete">Excluir</string>
+    <string name="status_active">Ativo</string>
+    <string name="status_inactive">Inativo</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_gastos">Gastos</string>
+    <string name="nav_usuarios">Usuários</string>
+    <string name="nav_feed">Feed</string>
+    <string name="nav_mapas">Mapas</string>
+    <string name="confirm_delete_title">Excluir usuário</string>
+    <string name="confirm_delete_message">Tem certeza que deseja excluir este usuário?</string>
+    <string name="confirm_delete_post_title">Excluir post</string>
+    <string name="confirm_delete_post_message">Tem certeza que deseja excluir este post do feed?</string>
+    <string name="confirm_keep_post_title">Manter post</string>
+    <string name="confirm_keep_post_message">Confirmar que este post deve ser mantido no feed?</string>
+    <string name="confirm_yes">Sim</string>
+    <string name="confirm_no">Não</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

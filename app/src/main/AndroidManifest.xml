@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Unicat">
+
+        <!-- Tela de entrada (login) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Fluxo de autenticação -->
+        <activity android:name=".CriarContaActivity"       android:exported="false" />
+        <activity android:name=".RecuperacaoSenhaActivity" android:exported="false" />
+
+        <!-- Área do usuário comum -->
+        <activity android:name=".UserActivity"             android:exported="false" />
+        <activity android:name=".MapaActivity"             android:exported="false" />
+        <activity android:name=".NovoPostActivity"         android:exported="false" />
+        <activity android:name=".ListaGatosActivity"       android:exported="false" />
+        <activity android:name=".PerfilGatoActivity"       android:exported="false" />
+        <activity android:name=".NotificacoesActivity"     android:exported="false" />
+        <activity android:name=".BuscaActivity"            android:exported="false" />
+
+        <!-- Área administrativa -->
+        <activity android:name=".AdminHomeActivity"        android:exported="false" />
+        <activity android:name=".AdminFeedActivity"        android:exported="false" />
+
+        <!--
+            ✅ NOVO: Tela de Gestão de Usuários
+            Integrada do projeto GestaoUsuarios
+        -->
+        <activity android:name=".GestaoUsuariosActivity"   android:exported="false" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+}
+
+.app {
+    width: 360px;
+    height: 720px;
+    background: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.header {
+    background: #2f5fa7;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: #eee;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.nome {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.email {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.editar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255,255,255,0.2);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+/* CONTEÚDO */
+.content {
+    flex: 1;
+    padding: 10px;
+}
+
+/* SEÇÃO */
+.section {
+    margin-bottom: 15px;
+}
+
+.section h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* CARDS AFILIADOS */
+.afiliados {
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card span {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+/* POSTS */
+.posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.post {
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.p1 { background: #cfd9e6; }
+.p2 { background: #e6d9a6; }
+.p3 { background: #e6cfd6; }
+.p4 { background: #cfe6dc; }
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background: #eee;
+    font-size: 12px;
+}
+
+.footer div {
+    text-align: center;
+    color: #555;
+}
+</style>
+
+</head>
+<body>
+
+<div class="app">
+
+    <div class="header">
+        <div class="editar">Editar</div>
+        <div class="avatar">👩</div>
+        <div class="nome">Ana Souza</div>
+        <div class="email">ana.souza@email.com</div>
+    </div>
+
+    <div class="content">
+
+        <div class="section">
+            <h3>🐾 Meus Afiliados</h3>
+            <div class="afiliados">
+                <div class="card">
+                    🐱
+                    <span>Mingau</span>
+                </div>
+                <div class="card">
+                    🐈
+                    <span>Pretinha</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>📸 Meus Posts</h3>
+            <div class="posts">
+                <div class="post p1">🐱</div>
+                <div class="post p2">🦁</div>
+                <div class="post p3">🐾</div>
+                <div class="post p4">🐱</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div>🗺️<br>Mapa</div>
+        <div>🐱<br>Gatos</div>
+        <div>📰<br>Feed</div>
+        <div style="color:#2f5fa7;">👤<br>Perfil</div>
+    </div>
+
+</div>
+
+</body>
+</html>
